@@ -13,13 +13,19 @@ Make sure your kubernetes cluster is up and helm is installed on your system.
 
 Create kubernetes namespace where you want to install Imaging Console system
 
-Below command will create namespace console
+
 
 For Azure AKS, 
 
-**Login to Azure:** az login
-
-**Set the AKS Cluster Context:** az aks get-credentials --resource-group <RESOURCE_GROUP> --name <CLUSTER_NAME>
+**Login to Azure:** 
+```
+az login
+```
+**Set the AKS Cluster Context:** 
+```
+az aks get-credentials --resource-group <RESOURCE_GROUP> --name <CLUSTER_NAME>
+```
+**Create AKS namespace console**
 ```
 kubectl create ns castimaging-v3
 
